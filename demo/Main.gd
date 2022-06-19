@@ -18,11 +18,11 @@ func _input(event: InputEvent) -> void:
 func _process(delta: float) -> void:
 	if pen_inverted:
 		if pressed:
-			VisualServer.set_default_clear_color(Color(0,1.0,0,1.0))
+			RenderingServer.set_default_clear_color(Color(0,1.0,0,1.0))
 		else:
-			VisualServer.set_default_clear_color(Color(0,0.6,0,1.0))
+			RenderingServer.set_default_clear_color(Color(0,0.6,0,1.0))
 	else:
 		if pressed:
-			VisualServer.set_default_clear_color(Color(1.0,0,0,1.0))
+			RenderingServer.set_default_clear_color(Color(1.0,0,0,1.0))
 		else:
-			VisualServer.set_default_clear_color(Color(0.6,0,0,1.0))
+			RenderingServer.set_default_clear_color(Color(0.6,0,0,1.0))
