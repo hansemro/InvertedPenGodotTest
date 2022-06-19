@@ -6,6 +6,6 @@ func _ready():
 
 func _input(event: InputEvent) -> void:
 	if (event is InputEventMouseMotion):
-		print(event.as_text())
+		#print(event.as_text())
 		#print(event.pen_inverted)
-		#print(event.get_pen_inverted())
+		print(event.get_pen_inverted())
